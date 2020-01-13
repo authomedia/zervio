@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <%= render 'shared/meta/meta-tags' %>
-    <title>Zerv.io | <%= @page_title %></title>
-    <%= render 'shared/includes/external-css' %>
+    <title><%= title_tag %></title>
+
     <%= render 'shared/includes/assets' %>
     <%= content_for :stylesheets %>
   </head>
@@ -12,7 +12,6 @@
     <%= render 'shared/ui/main-layout' %>
     <%= render 'shared/ui/components/toast' %>
     <%= render 'shared/ui/components/modal' %>
-    <%= render 'shared/includes/external-javascript' %>
 
     <%= content_for :javascripts %>
   </body>

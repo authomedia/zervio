@@ -30,7 +30,12 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # App Dependencies
 gem 'devise'
+gem 'devise-i18n'
+gem 'devise-bootstrap-views', '~> 1.0'
 gem 'i18n-js'
+gem "react-rails", "~> 2.6"
+
+gem "foreman"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,3 +63,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
