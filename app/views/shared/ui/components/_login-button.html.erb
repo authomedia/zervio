@@ -1,0 +1,11 @@
+<% if user_signed_in? %>
+  <%= link_to(destroy_user_session_path, method: :delete, class: 'nav-link', id: 'logout-button') do %>
+    <span class="oi oi-account-logout"></span>
+    Sign out
+  <% end %>
+<% else %>
+  <%= link_to(new_user_session_path, class: 'nav-link', id: 'login-button') do %>
+      <span class="oi oi-account-login"></span>
+      Sign in
+    <% end %>
+<% end %>

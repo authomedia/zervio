@@ -1,3 +1,7 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<p><%= t('pages.index.dummy_content') %></p>
+
 <div id="react-container"></div>
+
+<% content_for :javascripts do %>
+  <%= javascript_pack_tag 'hello_react' %>
+<% end %>

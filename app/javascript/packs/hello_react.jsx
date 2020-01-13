@@ -5,6 +5,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
+import I18n from 'i18n-js/index.js.erb'
 
 const Hello = props => (
   <div>Hello {props.name}!</div>
@@ -20,7 +21,7 @@ Hello.propTypes = {
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <Hello name={I18n.t('pages.index.react')} />,
     document.getElementById('react-container').appendChild(document.createElement('div')),
   )
 })
