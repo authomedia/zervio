@@ -36,4 +36,8 @@ en:
       title: 'Home'
       dummy_content: 'Content here'
       react: 'React'
+  wizards:
+    sample:
+      title: 'Test wizard'
+      description: 'test description'
 

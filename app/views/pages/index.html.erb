@@ -1,8 +1,1 @@
-<%= render 'shared/ui/header', title: @title %>
-<p><%= t('pages.index.dummy_content') %></p>
-
-<div id="react-container"></div>
-
-<% content_for :javascripts do %>
-  <%= javascript_pack_tag 'hello_react' %>
-<% end %>
+<%= react_component 'Wizard' %>
